@@ -99,5 +99,5 @@ film_id INT NOT NULL REFERENCES films(id)
 
 CREATE TABLE characters_actors(
 character_id INT NOT NULL REFERENCES characters(id),
-person_id INT NOT NULL REF persons(id)
+person_id INT NOT NULL REFERENCES persons(id)
 );
