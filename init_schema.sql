@@ -28,7 +28,7 @@ person_id INT NOT NULL REFERENCES persons(id)
 CREATE TABLE emails(
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 email VARCHAR(50) NOT NULL,
-user_login VARCHAR(50) NOT NULL REFERENCES users(login),
+user_login VARCHAR(50) NOT NULL REFERENCES users(login)
 );
 
 CREATE TABLE genres(
