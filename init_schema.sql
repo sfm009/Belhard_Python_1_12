@@ -21,7 +21,7 @@ VALUES ('ADMIN', 'Administrator');
 CREATE TABLE users(
 login VARCHAR(50) NOT NULL PRIMARY KEY,
 password VARCHAR(50) NOT NULL,
-user_type_id VARCHAR(50) NOT NULL REFERENCES user_TYPES(id),
+user_type_id VARCHAR(50) NOT NULL REFERENCES user_types(id),
 person_id INT NOT NULL REFERENCES persons(id)
 );
 
