@@ -1,7 +1,6 @@
 from db.session import session_scope
 from db.tables.genres import Genres
 from db.tables.persons import Persons
-from db.tables.user_types import UserTypes
 
 if __name__ == '__main__':
     with session_scope() as db_session:
@@ -40,4 +39,3 @@ if __name__ == '__main__':
         genres = db_session.query(Genres).all()
         for element in genres:
             print(element.name)
-

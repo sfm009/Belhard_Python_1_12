@@ -2,7 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from contextlib import contextmanager
 
-
 engine = create_engine(
     'mysql+pymysql://root:localPass_009@localhost:3306/film_zone',
     pool_pre_ping=True,
